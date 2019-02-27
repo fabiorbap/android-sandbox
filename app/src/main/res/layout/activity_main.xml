@@ -6,95 +6,22 @@
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_margin="@dimen/margin_medium">
 
-        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        <Button
+            android:id="@+id/appButton"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:text="@string/main_activity_app_button"
+            android:layout_marginBottom="@dimen/margin_small"/>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:background="@android:color/black"
-                android:padding="16dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Hooray! You now know how to use the ScrollView"
-                android:textAlignment="center"
-                android:textColor="@android:color/white"
-                android:textSize="20sp" />
-
-
-        </FrameLayout>
-
-        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        <Button
+            android:id="@+id/componentsButton"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:background="@android:color/black"
-                android:padding="16dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Hooray! You now know how to use the ScrollView"
-                android:textAlignment="center"
-                android:textColor="@android:color/white"
-                android:textSize="20sp" />
-
-
-        </FrameLayout>
-
-        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:background="@android:color/black"
-                android:padding="16dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Hooray! You now know how to use the ScrollView"
-                android:textAlignment="center"
-                android:textColor="@android:color/white"
-                android:textSize="20sp" />
-
-
-        </FrameLayout>
-
-        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:background="@android:color/black"
-                android:padding="16dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Hooray! You now know how to use the ScrollView"
-                android:textAlignment="center"
-                android:textColor="@android:color/white"
-                android:textSize="20sp" />
-
-
-        </FrameLayout>
+            android:layout_height="wrap_content"
+            android:text="@string/main_activity_components_button"
+            android:layout_marginBottom="@dimen/margin_small"/>
 
     </LinearLayout>
 
