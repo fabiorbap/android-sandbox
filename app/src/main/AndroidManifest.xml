@@ -17,6 +17,7 @@
         </activity>
         <activity android:name=".viewcontrollers.UserListActivity" />
         <activity android:name=".viewcontrollers.ComponentListActivity" />
+        <activity android:name=".viewcontrollers.UserFormActivity" />
     </application>
 
 </manifest>

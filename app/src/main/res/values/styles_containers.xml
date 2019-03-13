@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="RootContainer">
+        <item name="android:padding">@dimen/margin_medium</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:clipChildren">false</item>
+    </style>
+
+    <style name="ListContainer">
+        <item name="android:divider">@drawable/list_divider</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:showDividers">middle</item>
+    </style>
+
+</resources>

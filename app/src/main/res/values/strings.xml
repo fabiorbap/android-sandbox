@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Sandbox</string>
 
+    <!-- GENERIC STRINGS -->
+    <string name="email">E-mail</string>
+    <string name="name">Nome</string>
+    <string name="add">Adicionar</string>
+
 </resources>
