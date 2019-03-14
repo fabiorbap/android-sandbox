@@ -16,6 +16,7 @@
 
     <style name="Button.Primary">
         <item name="android:background">@color/colorPrimary</item>
+        <item name="android:layout_marginTop">@dimen/margin_small</item>
     </style>
 
     <style name="Button.Neutral">
