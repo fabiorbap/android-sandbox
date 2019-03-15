@@ -5,29 +5,12 @@ import android.support.v7.app.AppCompatActivity
 import android.view.MenuItem
 import br.com.frachid.sandbox.R
 
-class UserFormActivity : AppCompatActivity() {
+class UserFormActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         setContentView(R.layout.activity_user_form)
-        setupToolbar()
+        setupToolbar(showBackButton = true, toolbarTitle = getString(R.string.user_forms_title))
         super.onCreate(savedInstanceState)
-    }
-
-    private fun setupToolbar(){
-        supportActionBar?.let {
-            with(it) {
-                title = getString(R.string.user_forms_title)
-                setDisplayHomeAsUpEnabled(true)
-            }
-        }
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
-        if (item?.itemId == android.R.id.home){
-            onBackPressed()
-            return true
-        }
-        return super.onOptionsItemSelected(item)
     }
 
 }

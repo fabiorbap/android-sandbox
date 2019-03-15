@@ -7,12 +7,12 @@ import android.view.MenuItem
 import br.com.frachid.sandbox.R
 import kotlinx.android.synthetic.main.activity_user_list.*
 
-class UserListActivity : AppCompatActivity() {
+class UserListActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         setContentView(R.layout.activity_user_list)
         setupFAB()
-        setupToolbar()
+        setupToolbar(showBackButton = true, toolbarTitle = getString(R.string.user_list_title))
         super.onCreate(savedInstanceState)
     }
 
@@ -20,23 +20,6 @@ class UserListActivity : AppCompatActivity() {
         userListAddUser.setOnClickListener {
             startActivity(Intent(this, UserFormActivity::class.java))
         }
-    }
-
-    private fun setupToolbar(){
-        supportActionBar?.let {
-            with(it) {
-                title = getString(R.string.user_list_title)
-                setDisplayHomeAsUpEnabled(true)
-            }
-        }
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
-        if (item?.itemId == android.R.id.home){
-            onBackPressed()
-            return true
-        }
-        return super.onOptionsItemSelected(item)
     }
 
 }
