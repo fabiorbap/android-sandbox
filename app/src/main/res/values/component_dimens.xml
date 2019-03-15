@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--BUTTONS-->
+    <dimen name="button_height">36dp</dimen>
+
+</resources>
