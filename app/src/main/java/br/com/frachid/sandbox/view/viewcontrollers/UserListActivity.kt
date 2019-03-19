@@ -1,9 +1,7 @@
-package br.com.frachid.sandbox.viewcontrollers
+package br.com.frachid.sandbox.view.viewcontrollers
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
-import android.view.MenuItem
 import br.com.frachid.sandbox.R
 import kotlinx.android.synthetic.main.activity_user_list.*
 
