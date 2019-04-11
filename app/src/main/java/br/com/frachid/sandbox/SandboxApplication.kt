@@ -9,7 +9,7 @@ class SandboxApplication : Application() {
     override fun onCreate() {
         Realm.init(this)
         val realmConfig = RealmConfiguration.Builder()
-                .name("tasky.realm")
+                .name("task.realm")
                 .deleteRealmIfMigrationNeeded()
                 .schemaVersion(0)
                 .build()
