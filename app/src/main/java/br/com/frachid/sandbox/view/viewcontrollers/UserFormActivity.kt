@@ -9,7 +9,7 @@ import kotlinx.android.synthetic.main.activity_user_form.*
 
 class UserFormActivity : BaseActivity() {
 
-    val viewModel by lazy{  ViewModelProviders.of(this).get(UserFormViewModel::class.java) }
+    private val viewModel by lazy{  ViewModelProviders.of(this).get(UserFormViewModel::class.java) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         setContentView(R.layout.activity_user_form)

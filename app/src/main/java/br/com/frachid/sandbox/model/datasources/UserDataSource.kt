@@ -29,7 +29,7 @@ class UserDataSource {
         return if (users != null && users?.isValid == true){
             users?.toList()
         } else {
-            listOf<UserModel>()
+            listOf()
         }
     }
 

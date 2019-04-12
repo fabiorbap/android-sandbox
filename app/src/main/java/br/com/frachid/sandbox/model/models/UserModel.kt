@@ -10,6 +10,6 @@ open class UserModel : RealmObject() {
     @PrimaryKey
     var id: String? = ""
     var name: String? = ""
-    var email: String = ""
+    var email: String? = ""
 
 }

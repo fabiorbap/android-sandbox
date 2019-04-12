@@ -14,4 +14,9 @@
         <item name="android:showDividers">middle</item>
     </style>
 
+    <style name="CellContainer">
+        <item name="android:padding">@dimen/margin_medium</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+
 </resources>
