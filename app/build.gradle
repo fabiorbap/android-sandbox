@@ -21,6 +21,32 @@ android {
         }
     }
 
+    flavorDimensions "version"
+    productFlavors {
+        app {
+            dimension "version"
+            applicationIdSuffix ".app"
+            versionNameSuffix "-app"
+            resValue "string", "app_name", "Sandbox App"
+        }
+        storybook {
+            dimension "version"
+            applicationIdSuffix ".storybook"
+            versionNameSuffix "-storybook"
+            resValue "string", "app_name", "Sandbox Storybook"
+        }
+    }
+
+    // Ignore release type for storybook
+    variantFilter { variant ->
+        def names = variant.flavors*.name
+        // To check for a certain build type, use variant.buildType.name == "<buildType>"
+        if (names.contains("storybook") && variant.buildType.name  == "release") {
+            // Gradle ignores any variants that satisfy the conditions above.
+            setIgnore(true)
+        }
+    }
+
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }

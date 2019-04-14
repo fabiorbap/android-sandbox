@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/margin_medium">
+
+        <Button
+            android:id="@+id/formsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forms"
+            android:layout_marginBottom="@dimen/margin_small"/>
+
+        <Button
+            android:id="@+id/cellsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cells"
+            android:layout_marginBottom="@dimen/margin_small"/>
+
+    </LinearLayout>
+
+</ScrollView>
