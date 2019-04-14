@@ -16,7 +16,6 @@
 
     <style name="CellContainer">
         <item name="android:paddingRight">@dimen/margin_medium</item>
-        <item name="android:paddingLeft">@dimen/margin_medium</item>
         <item name="android:paddingTop">@dimen/margin_x_small</item>
         <item name="android:paddingBottom">@dimen/margin_x_small</item>
         <item name="android:background">@android:color/white</item>
