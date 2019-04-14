@@ -7,4 +7,7 @@
     <dimen name="margin_large">24dp</dimen>
     <dimen name="margin_x_large">32dp</dimen>
 
+    <!-- GENERIC DIMENSIONS -->
+    <dimen name="unitary_dimension">1dp</dimen>
+
 </resources>

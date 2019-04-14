@@ -11,6 +11,18 @@ class Cell @JvmOverloads constructor(context: Context, attrs: AttributeSet? = nu
 
     init {
         LayoutInflater.from(context).inflate(R.layout.component_cell, this, true)
+        context.theme.obtainStyledAttributes(
+                attrs,
+                R.styleable.Cell,
+                0, 0).apply {
+
+            try {
+                cellTopText.text = getString(R.styleable.Cell_topText)
+                cellBottomText.text = getString(R.styleable.Cell_bottomText)
+            } finally {
+                recycle()
+            }
+        }
     }
 
     fun setTopText(text: String){

@@ -20,6 +20,7 @@ class UserDataSource {
         }
     }
 
+    // TODO observe realm state
     fun getUsers(): List<UserModel>? {
         val realm = Realm.getDefaultInstance()
         var users: RealmResults<UserModel>? = null

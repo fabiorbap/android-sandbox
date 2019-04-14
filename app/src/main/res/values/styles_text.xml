@@ -8,6 +8,7 @@
 
     <style name="BaseText.H2">
         <item name="android:textSize">@dimen/text_size_x_large</item>
+        <item name="android:layout_marginBottom">@dimen/margin_medium</item>
     </style>
 
     <style name="BaseText.H3">
