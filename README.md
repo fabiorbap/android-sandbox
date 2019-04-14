@@ -6,7 +6,7 @@ Repository to experiment with Android technologies
 I created this repository to experiment with architectures, dependencies and personal ideas in Android.
 
 Initially, this will be a simple CRUD app for users, which will allow me to experiment with many topics I'm interested in.
-At this moment, it does not integrated with any server, but it will be integrated with Firebase in the future.
+At this moment, it is not integrated with any external databsae, but it will be integrated with Firebase in the future.
 
 It is a repository in permanent change, as I intend to constantly experiment with it.
 
