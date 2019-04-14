@@ -22,8 +22,26 @@ Install all that is required until the build is successful.
 
 # Configuration
 
-This project has two [flavors](https://developer.android.com/studio/build/build-variants): App and Storybook
+This project has two [flavors](https://developer.android.com/studio/build/build-variants): App and Storybook.
+
+The Storybook flavor doesn't have a 'release' variant, as it is intended for other objectives such as documentation, as explained below.
+
+If you want to change the flavor, you can simply do it by changing it in Android Studio.
 
 ## App
 
 This flavor comprises the actual app, where all the functionalities are available for testing.
+
+At this moment, the available funcionalities are the creation of an user and the retrieval of a list of the users.
+
+The app is using [RealmDB](https://realm.io/) to store content locally, in the device. In the future, when the app is
+integrated with Firebase, it will make calls to it and store whatever information is needed locally through Realm.
+
+## Storybook
+
+This flavor comprises the views used in the app, such as text inputs and cells.
+
+It serves as:
+- Documentation, so that all the views used are easily found and reused through the app.
+- Consistency, as similar views will be grouped together and it will be easy to detect if their style and layout are consitent.
+- Sandbox for views, as it is easier to create and test with views in activities without any integration or particular behavior. Instead of having to comment or manipulate the app code so that you can see a view you are building, which may introduce bugs and mess up the code, it is possible to do it in the storybook, where it is not necessary to comment or rewrite code.
