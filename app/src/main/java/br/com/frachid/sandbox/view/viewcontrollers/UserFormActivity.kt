@@ -3,6 +3,7 @@ package br.com.frachid.sandbox.view.viewcontrollers
 import android.arch.lifecycle.ViewModelProvider
 import android.arch.lifecycle.ViewModelProviders
 import android.os.Bundle
+import android.support.design.widget.Snackbar
 import br.com.frachid.sandbox.R
 import br.com.frachid.sandbox.viewmodel.UserFormViewModel
 import kotlinx.android.synthetic.main.activity_user_form.*
@@ -25,7 +26,15 @@ class UserFormActivity : BaseActivity() {
     private fun onButtonTap(){
         addUserButton.setOnClickListener {
             onAddUser()
+            clearForms()
+            Snackbar.make(rootContainer, getString(R.string.user_added_successfully), Snackbar.LENGTH_SHORT)
+                    .show()
         }
+    }
+
+    private fun clearForms(){
+        userListNameEditText.setText("")
+        userListEmailEditText.setText("")
     }
 
     private fun onAddUser(){

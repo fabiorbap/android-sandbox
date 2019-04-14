@@ -13,7 +13,7 @@
 
         <TextView
             android:id="@+id/cellTopText"
-            style="@style/BaseText.Body" />
+            style="@style/BaseText.H3" />
 
         <TextView
             android:id="@+id/cellBottomText"
