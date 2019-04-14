@@ -20,7 +20,7 @@ receive an error message prompting you to install some dependencies such as Buil
 
 Install all that is required until the build is successful.
 
-Then, either run the project in the emulator or in by connecting an Android device to the computer (it may ask you to allow the connection).
+Then, either run the project in the emulator or by connecting an Android device to the computer (it may ask you to allow the connection).
 
 If you choose to run it in an emulator, you will have to download one of the available Android versions in Android Studio and select a virtual device.
 
