@@ -6,6 +6,7 @@ import io.realm.RealmResults
 
 class UserDataSource {
 
+    // TODO check if realm is closed to avoid leaks
     fun saveUser(name: String, email: String) {
         val realm = Realm.getDefaultInstance()
         val tsLong = System.currentTimeMillis() / 1000
