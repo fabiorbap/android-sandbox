@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <declare-styleable name="Cell">
+        <attr name="topText" format="string" />
+        <attr name="bottomText" />
+    </declare-styleable>
+    
+</resources>
