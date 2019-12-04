@@ -16,6 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".MainStorybookActivity" />
+        <activity android:name=".FormsStorybookActivity" />
+        <activity android:name=".CellsStorybookActivity" />
     </application>
 
 </manifest>

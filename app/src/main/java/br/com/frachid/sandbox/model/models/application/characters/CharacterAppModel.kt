@@ -1,4 +1,4 @@
-package br.com.frachid.sandbox.model.models.applicationmodels.characters
+package br.com.frachid.sandbox.model.models.application.characters
 
 import com.google.gson.annotations.SerializedName
 

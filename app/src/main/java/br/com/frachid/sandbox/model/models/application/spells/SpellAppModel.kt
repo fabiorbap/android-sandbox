@@ -1,4 +1,4 @@
-package br.com.frachid.sandbox.model.models.applicationmodels.spells
+package br.com.frachid.sandbox.model.models.application.spells
 
 import com.google.gson.annotations.SerializedName
 

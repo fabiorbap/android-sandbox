@@ -3,24 +3,20 @@
     package="br.com.frachid.sandbox">
 
     <application
-        android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:name=".SandboxApplication"
-        android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name="br.com.frachid.sandbox.view.viewcontrollers.UserListActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
+                <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name="br.com.frachid.sandbox.view.viewcontrollers.UserFormActivity" />
         <activity android:name="br.com.frachid.sandbox.view.viewcontrollers.BaseActivity" />
-        <activity android:name=".MainStorybookActivity" />
-        <activity android:name=".FormsStorybookActivity" />
-        <activity android:name=".CellsStorybookActivity" />
+
     </application>
 
 </manifest>
