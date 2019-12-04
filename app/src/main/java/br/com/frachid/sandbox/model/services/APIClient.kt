@@ -10,9 +10,6 @@
     import retrofit2.converter.gson.GsonConverterFactory
     import okhttp3.HttpUrl
 
-
-
-
     class APIClient {
 
         companion object {

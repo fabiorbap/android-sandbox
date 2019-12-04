@@ -16,7 +16,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="br.com.frachid.sandbox.view.viewcontrollers.ComponentListActivity" />
         <activity android:name="br.com.frachid.sandbox.view.viewcontrollers.UserFormActivity" />
         <activity android:name="br.com.frachid.sandbox.view.viewcontrollers.BaseActivity" />
         <activity android:name=".MainStorybookActivity" />
