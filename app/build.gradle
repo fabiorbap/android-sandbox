@@ -2,7 +2,6 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
-apply plugin: 'realm-android'
 
 android {
     compileSdkVersion 28
@@ -28,7 +27,7 @@ android {
             applicationIdSuffix ".app"
             versionNameSuffix "-app"
             resValue "string", "app_name", "Sandbox App"
-            buildConfigField 'String', 'BASE_URL', 'https://www.potterapi.com/v1/'
+            buildConfigField 'String', 'BASE_URL', "https://www.potterapi.com/v1/"
             buildConfigField 'String', 'API_KEY', '$2a$10$7neRZ2NFnkQr0l3xewQ/NuEdP3ltZuPP.h5pXmB4fQfs.wm3ITYue'
         }
         storybook {
